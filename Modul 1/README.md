@@ -39,7 +39,26 @@ aku mengerjakan perulangan
 Buatlah program yang menerima input-an dua buah bilangan betipe float, kemudian memberikan output-an hasil penjumlahan, pengurangan, perkalian, dan pembagian dari dua bilangan tersebut.
 
 ```go
-masukin kodenya jirr
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a,b;
+    cout << "input bilangan pertama : ";
+    cin >> a;
+    cout << "input bilangan kedua   : ";
+    cin >> b;
+    
+    cout << "hasil penjumlahan  = " << a+b << endl;
+    cout << "hasil pengurangan  = " << a-b << endl;
+    cout << "hasil perkalian    = " << a*b << endl;
+    
+    if (b != 0)
+        cout << "hasil pembagian    = " << a/b << endl;
+    else
+        cout << "tidak ada jawaban" << endl;
+    return 0;
+}
 ```
 
 > Output
@@ -70,7 +89,7 @@ penjelasan kode
 ### Soal 3
 
 Buatlah program yang dapat memberikan input dan output sbb.
->!(Modul 1/output/WhatsApp Image 2025-09-26 at 09.57.26.jpeg)
+>![Gambar](output/WhatsApp%20Image%202025-09-26%20at%2009.57.26.jpeg)
 
 ```go
 package main
