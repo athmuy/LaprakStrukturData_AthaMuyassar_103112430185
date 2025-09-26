@@ -70,7 +70,7 @@ penjelasan kode
 ### Soal 3
 
 Buatlah program yang dapat memberikan input dan output sbb.
->(output/)
+>!(Modul 1/output/WhatsApp Image 2025-09-26 at 09.57.26.jpeg)
 
 ```go
 package main
