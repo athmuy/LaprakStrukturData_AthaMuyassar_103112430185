@@ -70,7 +70,7 @@ penjelasan kode
 ### Soal 3
 
 Buatlah program yang dapat memberikan input dan output sbb.
->(output)
+>(output/)
 
 ```go
 package main
