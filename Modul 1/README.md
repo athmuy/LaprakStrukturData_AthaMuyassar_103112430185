@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul X <br> Nama Modul</h1>
-<p align="center">NAMA - NIM</p>
+<p align="center">Atha Muyassar - 103112430185</p>
 
 ## Dasar Teori
 
@@ -11,20 +11,35 @@ yang panjang dikit
 
 aku mengerjakan perulangan
 
+### soal 2
+
+aku mengerjakan perulangan
+
+### soal 3
+
+aku mengerjakan perulangan
+
+### soal 4
+
+aku mengerjakan perulangan
+
+### soal 5
+
+aku mengerjakan perulangan
+
+### soal 6
+
+aku mengerjakan perulangan
+
+
 ## Unguided
 
 ### Soal 1
 
-copy paste soal nomor 1 disini
+Buatlah program yang menerima input-an dua buah bilangan betipe float, kemudian memberikan output-an hasil penjumlahan, pengurangan, perkalian, dan pembagian dari dua bilangan tersebut.
 
 ```go
-package main
-
-func main() {
-	fmt.Println("Kode kalian disini")
-	fmt.Println("JANGAN MASUKIN >>SCREENSHOT<< KODE KALIAN DISINI")
-	fmt.Println("KALAU ADA -20 POIN LAPRAK")
-}
+masukin kodenya jirr
 ```
 
 > Output
@@ -35,7 +50,9 @@ Penjelasan ttg kode kalian disini
 
 ### Soal 2
 
-soal nomor 2A
+Buatlah sebuah program yang menerima masukan angka dan mengeluarkan output nilai angka tersebut dalam bentuk tulisan. Angka yang akan di-input-kan user adalah bilangan bulat positif mulai dari 0 s.d 100
+contoh:
+79: tujuh puluh Sembilan
 
 ```go
 package main
@@ -50,22 +67,23 @@ func main() {
 
 penjelasan kode
 
-Kalau adalanjutan di lanjut disini aja
+### Soal 3
 
-soal nomor 2B
+Buatlah program yang dapat memberikan input dan output sbb.
+>(output)
 
 ```go
 package main
 
 func main() {
-	fmt.Println("kode untuk soal nomor 2B")
+	fmt.Println("kode untuk soal nomor 2A")
 }
 ```
 
 > Output
-> ![Screenshot bagian x](output/screenshot_soal2B.png)
+> ![Screenshot bagian x](output/screenshot_soal2A.png)
 
-penjelasan bedanya sesuai soal
+penjelasan kode
 
 ## Referensi
 
