@@ -74,15 +74,53 @@ contoh:
 79: tujuh puluh Sembilan
 
 ```go
-package main
+#include <iostream>
+using namespace std;
 
-func main() {
-	fmt.Println("kode untuk soal nomor 2A")
+string satuan[] = {"nol", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan"};
+string belasan[] = {"sepuluh", "sebelas", "dua belas", "tiga belas", "empat belas", "lima belas", "enam belas", "tujuh belas", "delapan belas", "sembilan belas"};
+string puluhan[] = {"", "", "dua puluh", "tiga puluh", "empat puluh", "lima puluh", "enam puluh", "tujuh puluh", "delapan puluh", "sembilan puluh"};
+
+int main() {
+    int angka;
+
+    cout << "ini adalah program membaca angka positif dari 0 sampai 100" << endl;
+    cout << "masukan angka yang di inginkan:";
+    cin >> angka;
+
+    string output;
+    if (angka < 0){
+        output = "wahh kekecilan bang";
+    } else if (angka < 10) {
+        output = satuan[angka];    
+    } else if (angka < 20) {
+        output = belasan[angka - 10];    
+    } else if (angka < 100) {
+        int puluh = angka / 10;
+        int satu = angka % 10;
+        output = puluhan[puluh];
+        if (satu != 0) {
+            output += " " + satuan[satu];
+        }        
+    } else if (angka == 100) {
+        output = "seratus";    
+    } else {
+        output = "angkanya kegedean bang";
+    }
+
+    if (angka > 100 || angka < 0){
+        cout << output << endl;
+    } else {
+        cout << angka << " dibaca " << output << endl;
+    }
+
+    return 0;
+    
 }
 ```
 
 > Output
-> ![Screenshot bagian x](output/screenshot_soal2A.png)
+> ![output](output/image.png)
 
 penjelasan kode
 
