@@ -44,17 +44,17 @@ using namespace std;
 
 int main() {
     float a,b;
-    cout << "input bilangan pertama : ";
+    cout << "input bilangan desimal pertama : ";
     cin >> a;
-    cout << "input bilangan kedua   : ";
+    cout << "input bilangan desimal kedua   : ";
     cin >> b;
     
-    cout << "hasil penjumlahan  = " << a+b << endl;
-    cout << "hasil pengurangan  = " << a-b << endl;
-    cout << "hasil perkalian    = " << a*b << endl;
+    cout << "hasil penjumlahan dari  " << a << " + " << b << " = " << a+b << endl;
+    cout << "hasil pengurangan dari  " << a << " - " << b << " = " << a-b << endl;
+    cout << "hasil perkalian dari  " << a << " x " << b << " = " << a*b << endl;
     
     if (b != 0)
-        cout << "hasil pembagian    = " << a/b << endl;
+        cout << "hasil pembagian dari  " << a << " : " << b << " = " << a/b << endl;
     else
         cout << "tidak ada jawaban" << endl;
     return 0;
@@ -62,8 +62,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](output/screenshot_soal1.png)
-> %% Untuk mencantumkan screenshot, tidak boleh ada spasi di urlnya `()`, penamaan file bebas asal gak sara dan mudah dipahami aja,, dan jangan lupa hapus komen ini yah%%
+> ![Screenshot bagian x](output/2.png)
 
 Penjelasan ttg kode kalian disini
 
