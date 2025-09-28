@@ -62,7 +62,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](output/2.png)
+> ![Screenshot bagian x](output/2.jpg)
 
 Penjelasan ttg kode kalian disini
 
