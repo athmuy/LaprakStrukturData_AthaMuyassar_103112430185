@@ -154,7 +154,7 @@ int main(){
 ```
 
 > Output
-> ![Screenshot bagian x](output/screenshot_soal2A.png)
+> ![Screenshot bagian x](output/3.jpeg)
 
 penjelasan kode
 
