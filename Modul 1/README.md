@@ -9,7 +9,8 @@ yang panjang dikit
 
 ### soal 1 (struct)
 
-aku mengerjakan perulangan
+untuk guided 1 kita membuat sebuah program yang bertujuan untuk menyimpan dan menampilkan data sederhana dengan memanfaatkan struct sebagai struktur data.
+kenapa pakai struct, karena untuk data yang punya banyak atribut struct dapat mengemas menjadi satu kesatuan yang membuat data lebih rapi dan mudah di kelola
 ```go
 #include <iostream>
 #include <string>
@@ -40,10 +41,12 @@ int main() {
     return 0;
 }
 ```
+>Output
+>![output](output/gu_1.jpg)
 
 ### soal 2 (aritmatika)
 
-aku mengerjakan perulangan
+Program ini membuat sebuah operasi aritmetika sederhana, di mana kita menjumlahkan nilai X dan Y, kemudian menjumlahkan juga nilai Y dan W. Setelah itu, hasil penjumlahan pertama dibagi dengan hasil penjumlahan kedua, dan hasil dari pembagian tersebut disimpan ke dalam variabel Z.
 ```go
 #include <iostream>
 using namespace std;
@@ -59,10 +62,12 @@ int main()
     return 0;
 }
 ```
+>Output
+>![output](output/gu_2.jpg)
 
 ### soal 3 (kondisi)
 
-aku mengerjakan perulangan
+Program ini digunakan untuk menentukan apakah suatu hari termasuk hari kerja atau hari libur berdasarkan kode angka yang dimasukkan oleh pengguna. Sistem ini menggunakan pengkondisian switch-case, di mana jika pengguna memasukkan kode angka 1 sampai 5 maka akan ditampilkan "Hari Kerja", sedangkan jika kode yang dimasukkan adalah 6 atau 7 maka akan ditampilkan "Hari Libur". Jika pengguna memasukkan kode selain angka 1 sampai 7, maka sistem akan menampilkan pesan "Kode masukan salah!!!".
 ```go
 #include <iostream>
 using namespace std;
@@ -92,10 +97,12 @@ int main()
     return 0;
 }
 ```
+>Output
+>![output](output/gu_3.jpg)
 
 ### soal 4 (perulangan)
 
-aku mengerjakan perulangan
+Program ini berfungsi untuk menampilkan teks berulang sesuai jumlah yang dimasukkan pengguna dengan menggunakan perulangan do...while. Perulangan ini selalu menjalankan perintah minimal satu kali sebelum memeriksa kondisi.
 ```go
 #include <iostream>
 using namespace std;
@@ -112,10 +119,12 @@ int main()
     return 0;
 }
 ```
+>Output
+>![output](output/gu_4.jpg)
 
 ### soal 5 (fungsi)
 
-aku mengerjakan perulangan
+Program ini digunakan untuk menghitung luas dan keliling persegi panjang dengan cara menerima input panjang dan lebar dari pengguna, kemudian menghitungnya melalui fungsi (function), dan menampilkan hasil perhitungan tersebut menggunakan fungsi tampilan.
 ```go
 #include <iostream>
 using namespace std;
@@ -159,12 +168,13 @@ int main()
 
     return 0;
 }
-
 ```
+>Output
+>![output](output/gu_5.jpg)
 
 ### soal 6 (test)
 
-aku mengerjakan perulangan
+Program ini digunakan untuk membaca sebuah karakter dari input pengguna dengan menggunakan fungsi getchar(). Ini berfungsi untuk mengambil satu karakter dari keyboard, di mana jika pengguna mengetik lebih dari satu huruf maka hanya karakter pertama yang akan dibaca, sedangkan sisanya tetap berada di buffer.
 ```go
 #include <iostream>
 using namespace std;
@@ -177,7 +187,8 @@ int main()
     return 0;
 }
 ```
-
+>Output
+>![output](output/gu_6.jpg)
 
 ## Unguided
 
