@@ -129,10 +129,27 @@ Buatlah program yang dapat memberikan input dan output sbb.
 >![Gambar](output/WhatsApp%20Image%202025-09-26%20at%2009.57.26.jpeg)
 
 ```go
-package main
+#include <iostream>
+using namespace std;
 
-func main() {
-	fmt.Println("kode untuk soal nomor 2A")
+int main(){
+    int n;
+    cout << "masukan angka: ";
+    cin >> n;
+    
+    cout << "hasilnya adalah \n";
+    for (int i = n; i >= 1; i--){
+        
+        for (int s = 0; s < n-i; s++){
+        cout << " ";
+        }
+        
+        for (int j = i; j >= 1; j--) cout << j;
+        cout << " * ";
+        for (int j = 1; j <= i; j++) cout << j;
+        cout << endl;
+    }
+    return 0;
 }
 ```
 
