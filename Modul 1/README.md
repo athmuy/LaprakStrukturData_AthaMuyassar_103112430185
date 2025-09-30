@@ -1,9 +1,9 @@
-# <h1 align="center">Laporan Praktikum Modul X <br> Nama Modul</h1>
+# <h1 align="center">Laporan Praktikum Modul 1 <br> Pengenalan C++ </h1>
 <p align="center">Atha Muyassar - 103112430185</p>
 
 ## Dasar Teori
 
-yang panjang dikit
+Bahasa C++ adalah bahasa tingkat tinggi yang di kembangkan dari bahasa C. C++ terdiri atas preprocessor directive seperti #include <iostream> untuk memanggil pustaka dan fungsi main() sebagai titik awal eksekusi program. C++ juga menyediakan beberapa tipe data seperti int, char, float, double, string, dan bool. untuk input dan output C++ menggunakan cin(input) dan cout(output) yang dimana perlu menggunakan operator >> untuk membaca data dan << untuk menmpilkan data. Ada juga struktur kontrol seperti if, if-else, switch-case, for, while, dan do-while. ada juga kontrol alur khusus seperti break dan continue.
 
 ## Guided
 
@@ -222,7 +222,7 @@ int main() {
 > Output
 > ![Screenshot bagian x](output/2.jpg)
 
-Penjelasan ttg kode kalian disini
+Program ini digunakan untuk melakukan operasi aritmatika dasar pada dua bilangan desimal yang dimasukan, sistem ini juga menggunakan pengkondisian if untuk memastikan bahwa operasi pembagian hanya di lakukan jika b tidak sama dengan nol.
 
 ### Soal 2
 
@@ -279,7 +279,7 @@ int main() {
 > Output
 > ![output](output/image.png)
 
-penjelasan kode
+Program ini digunakan untuk membaca angka dari 0 - 100 dalam bahasa indonesia, pertama program ini menyiapkan tiga array string yaitu satuan (0-9), belasan (10-19), lalu puluhan (kelipatan 10). setelah itu pengguna diminta untuk memasukan angka dan program akan memeriksa angka tersebut dengan struktur pengkondisian. jika angka kurang dari 0 tampilkan angka terlalu kecil, jika angka kurang dari 10 program mengambil kata dari array satuan, jika angka antara 10 - 19 program mengambil angka dari array belasan, untuk angka 20 - 99 program memecah angka menjadi puluhan dan satuan lalu menyusunnya menjadi teks, jika angka sama dengan 100 maka program menuliskan seratus, dan jika angka lebih besar dari 100 program menampilkan pesan angkanya terlalu besar.
 
 ### Soal 3
 
@@ -314,8 +314,12 @@ int main(){
 > Output
 > ![Screenshot bagian x](output/3.jpeg)
 
-penjelasan kode
+Program ini digunakan untuk mencetak pola berbentuk segitiga menurun yang terdiri dari angka menurun di sebelah kiri, tanda bintang * di tengah, dan angka menaik di sebelah kanan. Pola akan dicetak sebanyak n baris sesuai angka yang dimasukkan pengguna.
 
 ## Referensi
 
-1. https://en.wikipedia.org/wiki/Data_structure (diakses blablabla)
+1. https://www.w3schools.com/cpp/default.asp
+2. https://www.belajarcpp.com/tutorial/cpp/
+3. https://www.petanikode.com/cpp-windows/
+4. https://youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI&si=1oSxwc95gRfbVdbu
+5. 
