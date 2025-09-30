@@ -60,11 +60,7 @@ Bahasa C++ adalah bahasa tingkat tinggi yang di kembangkan dari bahasa C. C++ te
 ### Soal 1
 Buatlah sebuah program untuk melakukan transpose pada sebuah matriks persegi berukuran 3x3. Operasi transpose adalah mengubah baris menjadi kolom dan sebaliknya. Inisialisasi matriks awal di dalam kode, kemudian buat logika untuk melakukan transpose dan simpan hasilnya ke dalam matriks baru. Terakhir, tampilkan matriks awal dan matriks hasil transpose.
 Contoh Output:
-
-Matriks Awal:        Matriks Hasil Transpose:
-> |1 2 3|              |1 4 7|
-> |4 5 6|              |2 5 8|
-> |7 8 9|              |3 6 9|
+>![soal](output/ngu_!.jpg)
 
 ```go
 
