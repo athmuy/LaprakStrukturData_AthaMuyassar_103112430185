@@ -60,7 +60,7 @@ Bahasa C++ adalah bahasa tingkat tinggi yang di kembangkan dari bahasa C. C++ te
 ### Soal 1
 Buatlah sebuah program untuk melakukan transpose pada sebuah matriks persegi berukuran 3x3. Operasi transpose adalah mengubah baris menjadi kolom dan sebaliknya. Inisialisasi matriks awal di dalam kode, kemudian buat logika untuk melakukan transpose dan simpan hasilnya ke dalam matriks baru. Terakhir, tampilkan matriks awal dan matriks hasil transpose.
 Contoh Output:
->![soal](output/ngu_!.jpg)
+>![soal](output/ngu!.jpg)
 
 ```go
 
@@ -69,18 +69,32 @@ Contoh Output:
 > Output
 > ![Screenshot bagian x](output/2.jpg)
 
-Program ini digunakan untuk melakukan operasi aritmatika dasar pada dua bilangan desimal yang dimasukan, sistem ini juga menggunakan pengkondisian if untuk memastikan bahwa operasi pembagian hanya di lakukan jika b tidak sama dengan nol.
-
 ### Soal 2
-
+Buatlah program yang menunjukkan penggunaan call by reference. Buat sebuah prosedur bernama kuadratkan yang menerima satu parameter integer secara referensi (&). Prosedur ini akan mengubah nilai asli variabel yang dilewatkan dengan nilai kuadratnya. Tampilkan nilai variabel di main() sebelum dan sesudah memanggil prosedur untuk membuktikan perubahannya. 
+Contoh Output:
+Nilai awal: 5
+Nilai setelah dikuadratkan: 25
 ```go
+#include <iostream>
+using namespace std;
 
+void kuadratkan(int &n) {
+    n = n * n;
+}
+
+int main() {
+    int nilai;
+    cout << "masukan angka: ";
+    cin >> nilai;
+    cout << "ini angka " << nilai << endl;
+    kuadratkan(nilai);
+    cout << "setelah dikuadratkan hasilnya menjadi " << nilai << endl;
+    return 0;
+}
 ```
 
 > Output
 > ![output](output/image.png)
-
-Program ini digunakan untuk membaca angka dari 0 - 100 dalam bahasa indonesia, pertama program ini menyiapkan tiga array string yaitu satuan (0-9), belasan (10-19), lalu puluhan (kelipatan 10). setelah itu pengguna diminta untuk memasukan angka dan program akan memeriksa angka tersebut dengan struktur pengkondisian. jika angka kurang dari 0 tampilkan angka terlalu kecil, jika angka kurang dari 10 program mengambil kata dari array satuan, jika angka antara 10 - 19 program mengambil angka dari array belasan, untuk angka 20 - 99 program memecah angka menjadi puluhan dan satuan lalu menyusunnya menjadi teks, jika angka sama dengan 100 maka program menuliskan seratus, dan jika angka lebih besar dari 100 program menampilkan pesan angkanya terlalu besar.
 
 ## Referensi
 
