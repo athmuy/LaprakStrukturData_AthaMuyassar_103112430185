@@ -71,8 +71,11 @@ Contoh Output:
 
 ### Soal 2
 Buatlah program yang menunjukkan penggunaan call by reference. Buat sebuah prosedur bernama kuadratkan yang menerima satu parameter integer secara referensi (&). Prosedur ini akan mengubah nilai asli variabel yang dilewatkan dengan nilai kuadratnya. Tampilkan nilai variabel di main() sebelum dan sesudah memanggil prosedur untuk membuktikan perubahannya. 
+
 Contoh Output:
+
 Nilai awal: 5
+
 Nilai setelah dikuadratkan: 25
 ```go
 #include <iostream>
