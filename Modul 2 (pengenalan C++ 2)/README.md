@@ -23,51 +23,54 @@ Bahasa C++ adalah bahasa tingkat tinggi yang di kembangkan dari bahasa C. C++ te
 >Output
 >![output](output/gu_2.jpg)
 
-### soal 3 ()
-
-```go
-
-```
->Output
->![output](output/gu_3.jpg)
-
-### soal 4 ()
-
-```go
-
-```
->Output
->![output](output/gu_4.jpg)
-
-### soal 5 (fungsi)
-
-```go
-
-```
->Output
->![output](output/gu_5.jpg)
-
-### soal 6 ()
-
-```go
-
-```
->Output
->![output](output/gu_6.jpg)
 
 ## Unguided
 
 ### Soal 1
 Buatlah sebuah program untuk melakukan transpose pada sebuah matriks persegi berukuran 3x3. Operasi transpose adalah mengubah baris menjadi kolom dan sebaliknya. Inisialisasi matriks awal di dalam kode, kemudian buat logika untuk melakukan transpose dan simpan hasilnya ke dalam matriks baru. Terakhir, tampilkan matriks awal dan matriks hasil transpose.
 Contoh Output:
->![soal](output/ngu!.jpg)
+>![soal](output/soal_gu_1.jpg)
 
 ```go
+#include <iostream>
+using namespace std;
 
+int main() {
+    int matriks_awal[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9} };
+    
+    int matriks_transpose[3][3];
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            matriks_transpose[j][i] = matriks_awal[i][j];
+        }
+    }
+
+    cout << "matriks awal adalah :" << endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << matriks_awal[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\nsetelah di transpose menjadi :" << endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << matriks_transpose[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
 ```
 
 > Output
-> ![Screenshot bagian x](output/2.jpg)
+> ![Screenshot bagian x](output/ung_1.jpg)
 
 ### Soal 2
 Buatlah program yang menunjukkan penggunaan call by reference. Buat sebuah prosedur bernama kuadratkan yang menerima satu parameter integer secara referensi (&). Prosedur ini akan mengubah nilai asli variabel yang dilewatkan dengan nilai kuadratnya. Tampilkan nilai variabel di main() sebelum dan sesudah memanggil prosedur untuk membuktikan perubahannya. 
@@ -97,7 +100,7 @@ int main() {
 ```
 
 > Output
-> ![output](output/image.png)
+> ![output](output/ung_2.png)
 
 ## Referensi
 
