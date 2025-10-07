@@ -144,8 +144,9 @@ Program ini digunakan untuk menghitung kuadrat dari sebuah bilangan dengan meman
 
 ## Referensi
 
-1. https://www.w3schools.com/cpp/default.asp
-2. https://www.belajarcpp.com/tutorial/cpp/
-3. https://www.petanikode.com/cpp-windows/
-4. https://youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI&si=1oSxwc95gRfbVdbu
-5. 
+1. https://www.w3schools.com/cpp/cpp_arrays_multi.asp
+2. https://www.w3schools.com/cpp/cpp_pointers.asp
+3. https://www.w3schools.com/cpp/cpp_references.asp
+4. https://www.belajarcpp.com/tutorial/cpp/multidimensional-array/
+5. https://www.belajarcpp.com/tutorial/cpp/pointer/
+6. https://www.belajarcpp.com/tutorial/cpp/reference/
