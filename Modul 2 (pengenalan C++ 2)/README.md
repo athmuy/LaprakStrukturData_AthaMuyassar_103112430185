@@ -3,22 +3,58 @@
 
 ## Dasar Teori
 
-Bahasa C++ adalah bahasa tingkat tinggi yang di kembangkan dari bahasa C. C++ terdiri atas preprocessor directive seperti #include <iostream> untuk memanggil pustaka dan fungsi main() sebagai titik awal eksekusi program. C++ juga menyediakan beberapa tipe data seperti int, char, float, double, string, dan bool. untuk input dan output C++ menggunakan cin(input) dan cout(output) yang dimana perlu menggunakan operator >> untuk membaca data dan << untuk menmpilkan data. Ada juga struktur kontrol seperti if, if-else, switch-case, for, while, dan do-while. ada juga kontrol alur khusus seperti break dan continue.
+Array 2 dimensi adalah struktur data yang digunakan untuk menyimpan sekumpulan data dalam bentuk baris dan kolom sehingga menyerupai tabel atau matriks, di mana setiap elemennya diakses dengan indeks [baris][kolom] dan banyak digunakan untuk merepresentasikan data berbentuk grid, seperti matriks matematika, papan permainan, atau citra digital. Dalam pemanggilan fungsi, terdapat dua konsep penting yaitu call by pointer dan call by reference. Call by pointer adalah mekanisme di C/C++ di mana alamat memori suatu variabel dikirim ke fungsi menggunakan pointer sehingga fungsi dapat langsung mengubah nilai asli dari variabel tersebut dengan memanfaatkan operator * (dereferensi) dan & (alamat). Sementara itu, call by reference adalah mekanisme khusus di C++ yang mirip dengan call by pointer, tetapi lebih sederhana karena menggunakan tanda & pada parameter fungsi, sehingga variabel yang dikirim tidak disalin melainkan dirujuk secara langsung, membuat perubahan dalam fungsi juga berpengaruh pada variabel aslinya tanpa perlu menggunakan operator dereferensi. 
 
 ## Guided
 
-### soal 1 ()
+### soal 1 (Call by pointer)
 
+Program ini digunakan untuk menukar nilai dua variabel dengan menggunakan pointer. Fungsi tukar memanfaatkan alamat memori (&a dan &b) sehingga perubahan yang dilakukan di dalam fungsi langsung memengaruhi nilai variabel aslinya. Dengan cara ini, nilai a dan b berhasil ditukar tanpa perlu mengembalikan nilai dari fungsi.
 ```go
+#include <iostream>
+using namespace std;
 
+void tukar(int *px, int *py)
+{
+    int temp = *px;
+    *px = *py;
+    *py = temp;
+}
+
+int main()
+{
+    int a = 10, b = 20;
+    cout << "Sebelum ditukar: a = " << a << ", b = " << b << endl;
+    tukar(&a, &b);
+    cout << "Setelah ditukar: a = " << a << ", b = " << b << endl;
+    return 0;
+}
 ```
 >Output
 >![output](output/gu_1.jpg)
 
-### soal 2 ()
+### soal 2 (Call by referance)
 
+Program ini digunakan untuk menukar nilai dua variabel dengan memanfaatkan parameter referensi. Dengan cara ini, perubahan yang dilakukan dalam fungsi langsung memengaruhi variabel aslinya. Hasilnya, nilai a dan b berhasil ditukar dari 10 dan 20 menjadi 20 dan 10.
 ```go
+#include <iostream>
+using namespace std;
 
+void tukar(int &x, int &y)
+{
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
+int main()
+{
+    int a = 10, b = 20;
+    cout << "Sebelum ditukar: a = " << a << ", b = " << b << endl;
+    tukar(a, b);
+    cout << "Setelah ditukar: a = " << a << ", b = " << b << endl;
+    return 0;
+}
 ```
 >Output
 >![output](output/gu_2.jpg)
@@ -72,6 +108,8 @@ int main() {
 > Output
 > ![Screenshot bagian x](output/ung_1.jpg)
 
+Program ini digunakan untuk melakukan transpose matriks berukuran 3x3, yaitu menukar baris menjadi kolom dan kolom menjadi baris. Proses ini dilakukan dengan memanfaatkan array 2 dimensi dan perulangan bersarang (for di dalam for).
+
 ### Soal 2
 Buatlah program yang menunjukkan penggunaan call by reference. Buat sebuah prosedur bernama kuadratkan yang menerima satu parameter integer secara referensi (&). Prosedur ini akan mengubah nilai asli variabel yang dilewatkan dengan nilai kuadratnya. Tampilkan nilai variabel di main() sebelum dan sesudah memanggil prosedur untuk membuktikan perubahannya. 
 
@@ -100,7 +138,9 @@ int main() {
 ```
 
 > Output
-> ![output](output/ung_2.png)
+> ![output](output/ung_2.jpg)
+
+Program ini digunakan untuk menghitung kuadrat dari sebuah bilangan dengan memanfaatkan fungsi yang menggunakan parameter referensi. Dengan cara ini, variabel asli langsung dimodifikasi di dalam fungsi tanpa perlu mengembalikan nilai.
 
 ## Referensi
 
