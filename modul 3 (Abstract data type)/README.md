@@ -135,7 +135,6 @@ int main() {
 > Output
 > ![Screenshot bagian x](output/ung1.jpg)
 
-Program ini digunakan untuk melakukan transpose matriks berukuran 3x3, yaitu menukar baris menjadi kolom dan kolom menjadi baris. Proses ini dilakukan dengan memanfaatkan array 2 dimensi dan perulangan bersarang (for di dalam for).
 
 ### Soal 2
 Buatlah ADT pelajaran sebagai berikut di dalam file “pelajaran.h”:
@@ -201,16 +200,14 @@ int main() {
 > Output
 > ![output](output/ung2.jpg)
 
-Program ini digunakan untuk menghitung kuadrat dari sebuah bilangan dengan memanfaatkan fungsi yang menggunakan parameter referensi. Dengan cara ini, variabel asli langsung dimodifikasi di dalam fungsi tanpa perlu mengembalikan nilai.
+
 
 ### Soal 3
-Buatlah program yang menunjukkan penggunaan call by reference. Buat sebuah prosedur bernama kuadratkan yang menerima satu parameter integer secara referensi (&). Prosedur ini akan mengubah nilai asli variabel yang dilewatkan dengan nilai kuadratnya. Tampilkan nilai variabel di main() sebelum dan sesudah memanggil prosedur untuk membuktikan perubahannya. 
-
-Contoh Output:
-
-Nilai awal: 5
-
-Nilai setelah dikuadratkan: 25
+Buatlah program dengan ketentuan :
+- 2 buah array 2D integer berukuran 3x3 dan 2 buah pointer integer
+- fungsi/prosedur yang menampilkan isi sebuah array integer 2D
+- fungsi/prosedur yang akan menukarkan isi dari 2 array integer 2D pada posisi tertentu
+- fungsi/prosedur yang akan menukarkan isi dari variabel yang ditunjuk oleh 2 buah pointer
 ```go
 #include <iostream>
 using namespace std;
@@ -269,13 +266,8 @@ int main() {
 > Output
 > ![output](output/ung3.jpg)
 
-Program ini digunakan untuk menghitung kuadrat dari sebuah bilangan dengan memanfaatkan fungsi yang menggunakan parameter referensi. Dengan cara ini, variabel asli langsung dimodifikasi di dalam fungsi tanpa perlu mengembalikan nilai.
+
 
 ## Referensi
 
-1. https://www.w3schools.com/cpp/cpp_arrays_multi.asp
-2. https://www.w3schools.com/cpp/cpp_pointers.asp
-3. https://www.w3schools.com/cpp/cpp_references.asp
-4. https://www.belajarcpp.com/tutorial/cpp/multidimensional-array/
-5. https://www.belajarcpp.com/tutorial/cpp/pointer/
-6. https://www.belajarcpp.com/tutorial/cpp/reference/
+1. 
