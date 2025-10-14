@@ -140,8 +140,10 @@ Program ini digunakan untuk melakukan transpose matriks berukuran 3x3, yaitu men
 ### Soal 2
 Buatlah ADT pelajaran sebagai berikut di dalam file “pelajaran.h”:
 >![soal](output/soalgu2a.jpg)
+
 Buatlah implementasi ADT pelajaran pada file “pelajaran.cpp”
 Cobalah hasil implementasi ADT pada file “main.cpp”
+
 >![soal](output/soalgu2b.jpg)
 
 ### pelajaran.h
