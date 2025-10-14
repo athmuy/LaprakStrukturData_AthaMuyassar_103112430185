@@ -3,13 +3,13 @@
 
 ## Dasar Teori
 
-Array 2 dimensi adalah struktur data yang digunakan untuk menyimpan sekumpulan data dalam bentuk baris dan kolom sehingga menyerupai tabel atau matriks, di mana setiap elemennya diakses dengan indeks [baris][kolom] dan banyak digunakan untuk merepresentasikan data berbentuk grid, seperti matriks matematika, papan permainan, atau citra digital. Dalam pemanggilan fungsi, terdapat dua konsep penting yaitu call by pointer dan call by reference. Call by pointer adalah mekanisme di C/C++ di mana alamat memori suatu variabel dikirim ke fungsi menggunakan pointer sehingga fungsi dapat langsung mengubah nilai asli dari variabel tersebut dengan memanfaatkan operator * (dereferensi) dan & (alamat). Sementara itu, call by reference adalah mekanisme khusus di C++ yang mirip dengan call by pointer, tetapi lebih sederhana karena menggunakan tanda & pada parameter fungsi, sehingga variabel yang dikirim tidak disalin melainkan dirujuk secara langsung, membuat perubahan dalam fungsi juga berpengaruh pada variabel aslinya tanpa perlu menggunakan operator dereferensi. 
+Materi yang dipelajari kali ini mencakup dasar pemrograman fungsi, array, dan pointer. Fungsi digunakan untuk memisahkan logika agar program lebih terstruktur, di mana call by reference memungkinkan perubahan langsung pada variabel asli yang dikirim ke fungsi. Selain itu, penggunaan array dua dimensi memperkenalkan cara menyimpan dan mengakses data dalam bentuk tabel dengan indeks baris dan kolom, serta penerapan perulangan bersarang untuk menampilkan atau memanipulasi elemen-elemen di dalamnya, seperti pada proses transpose matriks. Terakhir, penggunaan pointer memperlihatkan bagaimana variabel dapat diakses dan ditukar nilainya secara langsung melalui alamat memori, yang memperkuat pemahaman tentang manajemen data di tingkat memori komputer. 
 
 ## Guided
 
-### soal 1 (Call by pointer)
+### soal 1
 
-Program ini digunakan untuk menukar nilai dua variabel dengan menggunakan pointer. Fungsi tukar memanfaatkan alamat memori (&a dan &b) sehingga perubahan yang dilakukan di dalam fungsi langsung memengaruhi nilai variabel aslinya. Dengan cara ini, nilai a dan b berhasil ditukar tanpa perlu mengembalikan nilai dari fungsi.
+Program ini membahas pengolahan data mahasiswa menggunakan struct dan fungsi di C++. Struct digunakan untuk menyimpan data nim, nilai1, dan nilai2, sedangkan fungsi inputMhs() menerima input dari pengguna dan rata2() menghitung rata-rata nilai. Program ini juga menerapkan pemisahan kode menggunakan file header dan source agar lebih rapi dan terstruktur.
 ### mahasiswa.cpp
 ```go
 #include "mahasiswa.h"
@@ -63,9 +63,9 @@ int main()
 ## Unguided
 
 ### Soal 1
-Buatlah sebuah program untuk melakukan transpose pada sebuah matriks persegi berukuran 3x3. Operasi transpose adalah mengubah baris menjadi kolom dan sebaliknya. Inisialisasi matriks awal di dalam kode, kemudian buat logika untuk melakukan transpose dan simpan hasilnya ke dalam matriks baru. Terakhir, tampilkan matriks awal dan matriks hasil transpose.
-Contoh Output:
->![soal](output/soal_gu_1.jpg)
+Buat program yang dapat menyimpan data mahasiswa (max. 10) ke dalam sebuah array
+dengan field nama, nim, uts, uas, tugas, dan nilai akhir. Nilai akhir diperoleh dari FUNGSI
+dengan rumus 0.3*uts+0.4*uas+0.3*tugas.
 
 ```go
 #include <iostream>
@@ -138,7 +138,11 @@ int main() {
 Program ini digunakan untuk melakukan transpose matriks berukuran 3x3, yaitu menukar baris menjadi kolom dan kolom menjadi baris. Proses ini dilakukan dengan memanfaatkan array 2 dimensi dan perulangan bersarang (for di dalam for).
 
 ### Soal 2
-Buatlah program yang menunjukkan penggunaan call by reference. Buat sebuah prosedur bernama kuadratkan yang menerima satu parameter integer secara referensi (&). Prosedur ini akan mengubah nilai asli variabel yang dilewatkan dengan nilai kuadratnya. Tampilkan nilai variabel di main() sebelum dan sesudah memanggil prosedur untuk membuktikan perubahannya. 
+Buatlah ADT pelajaran sebagai berikut di dalam file “pelajaran.h”:
+>![soal](output/soalgu2a.jpg)
+Buatlah implementasi ADT pelajaran pada file “pelajaran.cpp”
+Cobalah hasil implementasi ADT pada file “main.cpp”
+>![soal](output/soalgu2b.jpg)
 
 ### pelajaran.h
 ```go
