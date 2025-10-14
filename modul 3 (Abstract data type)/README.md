@@ -58,7 +58,7 @@ int main()
 }
 ```
 >Output
->![output](output/gu_2.jpg)
+>![output](output/gu1.jpg)
 
 ## Unguided
 
