@@ -592,9 +592,8 @@ Kesimpulan dari program di atas adalah bahwa kode tersebut merupakan implementas
 
 ## Referensi
 
-1. https://www.w3schools.com/cpp/default.asp
-2. https://www.belajarcpp.com/tutorial/cpp/
-3. https://www.petanikode.com/cpp-windows/
-4. https://youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI&si=1oSxwc95gRfbVdbu
-5. 
+1. https://www.geeksforgeeks.org/dsa/doubly-linked-list/
+2. https://www.tutorialspoint.com/data_structures_algorithms/doubly_linked_list_algorithm.htm
+3. https://www.cs.odu.edu/~zeil/cs330/latest/Public/implementingADTS/index.html
+4. https://www.geeksforgeeks.org/dsa/abstract-data-types/
 
