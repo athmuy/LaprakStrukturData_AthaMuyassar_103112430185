@@ -374,7 +374,7 @@ int main() {
 ```
 
 > Output
-> ![](output/ung1.jpg)
+> ![](output/ung.jpg)
 
 ### Soal 2
 Carilah elemen dengan info 8 dengan membuat fungsi baru.
@@ -382,14 +382,14 @@ fungsi findElm( L : List, x : infotype ) : address
 > ![soal](output/soal2.jpg)
 
 > Output
-> ![output](output/ung2.jpg)
+> ![output](output/ung.jpg)
 
 ### Soal 3
 Hitunglah jumlah total info seluruh elemen (9+12+8+0+2=31).
 > ![soal](output/soal3.jpg)
 
 > Output
-> ![output](output/ung3.jpg)
+> ![output](output/ung.jpg)
 
 ### Kesimpulan
 Program di atas merupakan implementasi linked list sederhana dengan fokus pada proses pencarian data (searching). Struktur datanya terdiri dari node yang menyimpan nilai info bertipe integer dan penunjuk next ke elemen berikutnya. Fungsi createList digunakan untuk membuat list kosong, alokasi untuk membuat node baru, dan insertFirst untuk menambahkan node di awal list. Bagian utama pencarian terdapat pada fungsi findElm, yang menelusuri setiap node mulai dari elemen pertama (L.first) menggunakan pointer P. Jika ditemukan node dengan nilai info yang sama dengan nilai yang dicari, fungsi akan mengembalikan alamat node tersebut, sedangkan jika tidak ditemukan hingga akhir list (Nil), fungsi mengembalikan Nil. Dengan cara ini, program dapat memeriksa apakah suatu nilai tertentu terdapat dalam linked list dan menampilkan hasilnya ke layar.
